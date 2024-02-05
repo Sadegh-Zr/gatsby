@@ -246,6 +246,7 @@ export default function pluginOptionSchema({ Joi }) {
               `The label member is a string that serves as the accessible name of that screenshots object.`
             ),
           platform: platform,
+          form_factor: Joi.string().optional()
         })
       )
       .description(
